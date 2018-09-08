@@ -45,7 +45,7 @@ object LineCounter
     }
   }
 
-  def main(args: Array[String]) {
+  def main(args: Array[String]): Unit = {
     val rootDir = new File(args(0))
     val sourceCounter = process(rootDir)
     val total = sourceCounter.values.foldLeft(0)(_ + _)
